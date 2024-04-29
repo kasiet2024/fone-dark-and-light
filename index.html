@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+     background: linear-gradient(45deg,red,yellow,green);
+        transition: 800ms;
+    }
+
+.DarkBody{
+    
+    
+background: linear-gradient(60deg,white,blue,purple);
+/* background-repeat: no-repeat;
+background-position: cover; */
+background-size: cover;
+    transition: 800ms;
+}
+button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 800ms;
+}
+.DarkBtn{
+    background-color: black;
+    width: 200px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    transition: 800px;
+}
+.SAN{
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: yellow;
+/* background-image: url(./asdfghjkl.jpg); */
+    transition: 800ms;
+
+}
+.MOON{
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color:rgb(128, 128, 128);
+    margin-left: 150px;
+    transition: 800ms;
+}
+
+
+</style>
+<body>
+    <button onclick="Toggle()" id="BtnToggle" ><div id="MOON AND SAN" class="SAN" ></div></button>
+<script>
+const Toggle = ()=>{
+document.body.classList.toggle('DarkBody')
+document.getElementById('BtnToggle').classList.toggle('DarkBtn')
+document.getElementById('MOON AND SAN').classList.toggle('MOON')
+}
+
+
+
+</script>
+
+</body>
+</html>
